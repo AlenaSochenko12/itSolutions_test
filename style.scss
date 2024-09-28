@@ -1,0 +1,283 @@
+$color-text: #f3f3f3;
+$color-dark: #191919;
+$color-white: #fff;
+$color-red: #EB1C24;
+$color-gray: #757575;
+$color-card: #f8f8f8;
+$color-button-card: #303030;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+  }
+
+  .center {
+    padding-left: calc(50% - 840px);
+    padding-right: calc(50% - 840px);
+  }
+
+  .header {
+    padding-top: 16px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    &_logo {
+        margin-right: 188px;
+    }
+    &_menu {
+        padding-top: 26px;
+        display: flex;
+        gap: 40px;
+    }
+    &_contacts {
+        display: flex;
+        gap: 40px;
+        &_links {
+            padding-top: 24px;
+            display: flex;
+            gap: 16px;
+        }
+    }
+    &_tel {
+        padding-top: 14px;
+    }
+  }
+
+  .fundament {
+    padding-top: 40px;
+    &_box {
+        display: flex;
+        height: 664px;
+        background-color: $color-dark   ;
+        border-radius: 40px;
+    }
+    &_column {
+        margin-left: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    &_text {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-top: 120px;
+        width: 604px;
+        &_general {
+            color: $color-text;
+            font-size: 52px;
+            font-weight: 900;
+        }
+        &_sub {
+            color: $color-white;
+            opacity: 0.5;
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+    &_button {
+        width: 288px;
+        background-color: $color-red;
+        border-radius: 16px;
+        border: 0px;
+        padding: 24px 32px 24px 32px;
+        text-align: center;
+        color: $color-white;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &_images {
+        position: relative;
+        top: 0px;
+        left: 3px;
+        &_triangle {
+            position: relative;
+            top: 152px;
+        }
+        &_cars {
+            position: absolute;
+            top: 96px;
+            left: -134px;
+        }
+    }
+  }
+
+  .cards {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    &_text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-bottom: 32px;
+        &_general {
+            color: $color-dark;
+            font-size: 32px;
+            font-weight: 900;
+        }
+        &_sub {
+            color: $color-gray;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        &_card {
+            margin-top: 22px;
+            color: $color-dark;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        &_cardsub {
+            margin-top: 12px;
+            color: $color-dark;
+            opacity: 0.5;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &_price {
+            color: $color-dark;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+    }
+    &_cars {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        &_card {
+            background-color: $color-card;
+            width: 370px;
+            height: 438px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 20px 20px 20px;
+            &_price {
+                margin-top: 12px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    &_withbutton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &_button {
+        width: 160px;
+        background-color: $color-button-card;
+        border-radius: 12px;
+        border: 0px;
+        padding: 12px 20px 12px 20px;
+        text-align: center;
+        color: $color-white;
+        font-size: 14px;
+        font-weight: 700;
+        &_1 {
+            margin-top: 32px;
+            width: 300px;
+            background-color: #D90008;
+        }
+        &:hover {
+            background-color: $color-red;
+        }
+    }
+  }
+
+  .banners {
+    padding-bottom: 120px;
+    &_cards {
+        display: flex;
+        gap: 12px;
+        &_card {
+            position: relative;
+            text-align: left;
+        }
+    }
+    &_text {
+        &_card {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            width: 308px;
+            color: $color-white;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        &_cardsub {
+            position: absolute;
+            top: 82px;
+            left: 40px;
+            width: 308px;
+            color: $color-white;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    &_button {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        width: 190px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 12px;
+        border: 0px;
+        padding: 12px 20px 12px 20px;
+        text-align: center;
+        color: $color-white;
+        font-size: 14px;
+        font-weight: 700;
+        &_1 {
+            margin-top: 32px;
+        }
+        &:hover {
+            background-color: $color-red;
+        }
+    }
+  }
+
+  .about {
+    padding-bottom: 42px;
+    &_card {
+        position: relative;
+        text-align: left;
+    }
+    &_logo {
+        position: absolute;
+        top: 60px;
+        right: 120px;
+    }
+    &_text {
+        &_card {
+            position: absolute;
+            top: 60px;
+            left: 120px;
+            color: $color-white;
+            font-size: 32px;
+            font-weight: 900;
+        }
+        &_cardsub {
+            position: absolute;
+            top: 116px;
+            left: 120px;
+            width: 816px;
+            color: $color-white;
+            font-size: 18px;
+            font-weight: 400;
+        }
+  }
+  &_properties {
+    height: 164px;
+    position: absolute;
+    bottom: -58px;
+    left: 120px;
+    right: 120px;
+    display: flex;
+    gap: 3px;
+    background-color: $color-white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.12);
+  }
+}
