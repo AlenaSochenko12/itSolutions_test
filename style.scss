@@ -30,6 +30,26 @@ $color-button-card: #303030;
         display: flex;
         gap: 40px;
     }
+    &_link {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        color: $color-dark;
+        &:hover {
+            color: $color-red;
+        }
+    }
+    &_tel {
+        font-size: 18px;
+        font-weight: 700;
+        color: $color-dark;
+        text-decoration: none;
+        &_text {
+            font-size: 14px;
+            font-weight: 400;
+            color: $color-gray;
+        }
+    }
     &_contacts {
         display: flex;
         gap: 40px;
@@ -39,7 +59,7 @@ $color-button-card: #303030;
             gap: 16px;
         }
     }
-    &_tel {
+    &_telephone {
         padding-top: 14px;
     }
   }
@@ -86,6 +106,9 @@ $color-button-card: #303030;
         color: $color-white;
         font-size: 18px;
         font-weight: 700;
+        &:hover {
+            background-color: #D90008;
+        }
     }
     &_images {
         position: relative;
@@ -178,8 +201,7 @@ $color-button-card: #303030;
         &_1 {
             margin-top: 32px;
             width: 300px;
-            background-color: #D90008;
-        }
+        }  
         &:hover {
             background-color: $color-red;
         }
@@ -239,7 +261,11 @@ $color-button-card: #303030;
   }
 
   .about {
-    padding-bottom: 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+    padding-bottom: 120px;
     &_card {
         position: relative;
         text-align: left;
@@ -267,17 +293,129 @@ $color-button-card: #303030;
             font-size: 18px;
             font-weight: 400;
         }
+        &_property {
+            font-size: 14px;
+            font-weight: 400;
+        }
   }
   &_properties {
-    height: 164px;
+    height: 116px;
     position: absolute;
     bottom: -58px;
     left: 120px;
     right: 120px;
     display: flex;
-    gap: 3px;
+    gap: 16px;
+    padding: 24px 20px 24px 20px;
     background-color: $color-white;
     border-radius: 20px;
     box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.12);
+    &_property {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        width: 200px;
+        text-align: center;
+    }
   }
+  &_image {
+    width: 40px;
+  }
+}
+
+.footer {
+    background-color: $color-dark;
+    padding-top: 40px;
+    padding-bottom: 24px;
+    &_up {
+        padding-bottom: 42px;
+        display: flex;
+    }
+    &_logo {
+        width: 110px;
+        margin-right: 60px;
+    }
+    &_general {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-right: 566px;
+        padding-top: 16px;
+    }
+    &_text {
+        &_link {
+            width: 90px;
+            color: $color-text;
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        &_title {
+            font-size: 16px;
+            font-weight: 700;
+            color: $color-text;
+        }
+        &_pk {
+            font-size: 14px;
+            font-weight: 400;
+            color: $color-gray;
+        }
+    }
+    &_country {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        &_links {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        &_link {
+            color: $color-gray;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: 400;
+            &:hover {
+                color: $color-red;
+            }
+        }
+    }
+    &_countries {
+        display: flex;
+        gap: 60px;
+    }
+    &_telephone {
+        padding-top: 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    &_tel {
+        font-size: 18px;
+        font-weight: 700;
+        color: $color-text;
+        text-decoration: none;
+    }
+    &_down {
+        border-top: 1px solid rgb(59, 59, 59);
+        display: flex;
+        justify-content: space-between;
+        &_pk {
+            padding-top: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        &_links {
+            display: flex;
+            gap: 40px;
+        }
+        &_contacts {
+            margin-top: 36px;
+            display: flex;
+            gap: 16px;
+        }
+    }
 }
